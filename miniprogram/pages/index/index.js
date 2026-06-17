@@ -1,15 +1,8 @@
 // 智能药箱 - 传感器数据监控
 // 通过 OneNET REST API 拉取设备数据流
 
-const CONFIG = {
-  // OneNET API 参数
-  productId: 'xk0We0H71c',
-  deviceName: 'dev1',
-  // API Token (1年有效，需更新时重新生成)
-  apiToken: 'version=2022-05-01&res=userid%2FCM002027416669&et=1813125799&method=sha1&sign=17yZpT5ZRZa3fRAphAzdNO%2Bxijs%3D',
-  apiBase: 'https://iot-api.heclouds.com',
-  refreshMs: 5000
-};
+// 从外部配置文件加载敏感参数（config.js 已 gitignore）
+const CONFIG = require('../../utils/config.js');
 
 // 数据流名称
 const STREAMS = ['temperature', 'humidity', 'tvoc', 'co2', 'lux', 'pill_count'];

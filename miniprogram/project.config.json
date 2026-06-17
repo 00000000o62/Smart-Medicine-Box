@@ -1,0 +1,11 @@
+{
+  "appid": "your-appid-here",
+  "projectname": "smart-medicine-box",
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "minified": true
+  }
+}

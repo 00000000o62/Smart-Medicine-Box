@@ -1,0 +1,21 @@
+# MounRiver Studio build artifacts
+Debug/
+Release/
+obj/
+.settings/
+*.hex
+*.bin
+*.o
+*.d
+*.elf
+*.list
+*.map
+*.scf
+
+# Sensitive config (contains WiFi passwords & API keys)
+User/config.h
+
+# IDE & misc
+.orig
+*.bak
+.mrs/

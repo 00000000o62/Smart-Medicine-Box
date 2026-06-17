@@ -1,0 +1,67 @@
+<view class="page">
+  <!-- Header -->
+  <view class="header">
+    <view class="header-title">智能药箱</view>
+    <view class="header-status">
+      <view class="dot {{online ? 'dot-on' : 'dot-off'}}"></view>
+      <text>{{online ? '在线' : '离线'}}</text>
+    </view>
+    <view class="header-time">更新 {{updateTime}}</view>
+  </view>
+
+  <!-- Sensor Cards -->
+  <view class="cards">
+    <!-- Temperature -->
+    <view class="card card-half">
+      <view class="card-icon">🌡️</view>
+      <view class="card-value">{{temperature}}</view>
+      <view class="card-label">温度</view>
+    </view>
+
+    <!-- Humidity -->
+    <view class="card card-half">
+      <view class="card-icon">💧</view>
+      <view class="card-value">{{humidity}}</view>
+      <view class="card-label">湿度</view>
+    </view>
+
+    <!-- Light -->
+    <view class="card card-half">
+      <view class="card-icon">☀️</view>
+      <view class="card-value">{{lux}}</view>
+      <view class="card-label">光照</view>
+    </view>
+
+    <!-- Pill Count -->
+    <view class="card card-half">
+      <view class="card-icon">💊</view>
+      <view class="card-value">{{pill_count}}</view>
+      <view class="card-label">服药计数</view>
+    </view>
+
+    <!-- TVOC -->
+    <view class="card card-full">
+      <view class="card-icon">🌬️</view>
+      <view class="card-value">{{tvoc}}</view>
+      <view class="card-label">TVOC</view>
+    </view>
+
+    <!-- CO2 -->
+    <view class="card card-full">
+      <view class="card-icon">🫧</view>
+      <view class="card-value">{{co2}}</view>
+      <view class="card-label">CO₂</view>
+    </view>
+
+    <!-- Air Quality -->
+    <view class="card card-full air-card" style="border-left: 4px solid {{airColor}};">
+      <view class="card-value" style="color: {{airColor}};">{{airQuality}}</view>
+      <view class="card-label">空气质量</view>
+    </view>
+  </view>
+
+  <!-- Reload hint -->
+  <view class="footer" wx:if="{{!online && !loading}}">
+    <text>设备离线，检查硬件连接</text>
+  </view>
+</view>

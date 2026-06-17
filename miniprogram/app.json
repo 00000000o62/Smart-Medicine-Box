@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "智能药箱",
+    "navigationBarBackgroundColor": "#2196F3",
+    "navigationBarTextStyle": "white"
+  }
+}

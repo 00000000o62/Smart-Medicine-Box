@@ -1,6 +1,8 @@
 # 智能药箱 Smart Medicine Box
 
 基于 **CH32V307VCT6 (RISC-V)** 的物联网智能药箱，集成环境监测、云端同步与微信小程序远程监控。
+n> 本仓库合并了 CH32V307 智能药箱与 K230 AI 药品识别两个子系统。
+> K230 源码位于 `k230/` 目录，CH32V307 源码位于根目录及 `Hardware/`、`User/` 子目录。
 
 > GitHub: https://github.com/00000000o62/Smart-Medicine-Box
 
